@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLINTON'S CARWASH</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CLINTON'S CARWASH</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Clinton's Carwash, where we offer premium car washes at your convenience!</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Basic Wash</h3>
+                <p>Exterior cleaning</p>
+            </div>
+            <div class="service">
+                <h3>Deluxe Wash</h3>
+                <p>Exterior + Interior cleaning</p>
+            </div>
+            <div class="service">
+                <h3>Premium Wash</h3>
+                <p>Full detail with wax, tire shine, and interior cleaning</p>
+            </div>
+        </section>
+
+        <section id="calculator">
+            <h2>Price Calculator</h2>
+            <form id="price-form">
+                <label for="wash-type">Choose Wash Type:</label>
+                <select id="wash-type">
+                    <option value="basic">Basic Wash</option>
+                    <option value="deluxe">Deluxe Wash</option>
+                    <option value="premium">Premium Wash</option>
+                </select>
+
+                <label for="vehicle-type">Choose Vehicle Type:</label>
+                <select id="vehicle-type">
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Truck</option>
+                </select>
+
+                <p>Total Price: <span id="total-price">R0</span></p>
+            </form>
+        </section>
+
+        <section id="booking">
+            <h2>Book Your Car Wash</h2>
+            <form>
+                <label for="location">Enter Your Location:</label>
+                <input type="text" id="location" placeholder="Enter your address">
+
+                <label for="time">Select Appointment Time:</label>
+                <input type="datetime-local" id="time">
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clinton's Carwash</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
